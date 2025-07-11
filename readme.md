@@ -4,7 +4,7 @@ A real-time fraud detection system designed to analyze payment transactions and 
 
 ---
 
-## 🚀 Features
+## Features
 
 - Detects and blocks fraudulent transactions in real-time
 - Event-driven microservices architecture for high scalability
@@ -15,13 +15,13 @@ A real-time fraud detection system designed to analyze payment transactions and 
 
 ---
 
-## 🧠 Problem Statement
+## Problem Statement
 
 With the rise in digital payments, fraud detection is more critical than ever. The goal of this project is to design a reliable and extensible system that can detect suspicious patterns (like unusual location, transaction spikes, or duplicate transactions) and trigger alerts or block them immediately — all in real-time.
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 - **Microservices** split into:
   - `Transaction Service`
@@ -36,7 +36,7 @@ With the rise in digital payments, fraud detection is more critical than ever. T
 
 ---
 
-## ⚙️ Core Concepts & Design Patterns
+## Core Concepts & Design Patterns
 
 - **SOLID Principles** for clean, testable, and maintainable code
 - **Design Patterns Used:**
@@ -47,7 +47,7 @@ With the rise in digital payments, fraud detection is more critical than ever. T
 
 ---
 
-## 🔒 Security
+## Security
 
 - JWT-based stateless authentication
 - Role-based access control to secure endpoints
@@ -55,7 +55,7 @@ With the rise in digital payments, fraud detection is more critical than ever. T
 
 ---
 
-## 📊 Tech Stack
+## Tech Stack
 
 
 ---
