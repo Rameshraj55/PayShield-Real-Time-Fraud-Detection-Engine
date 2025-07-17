@@ -6,4 +6,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+
+    int countByUserIdAndTimestampBetween(Long userId, Long from, Long to);
+
+
 }
