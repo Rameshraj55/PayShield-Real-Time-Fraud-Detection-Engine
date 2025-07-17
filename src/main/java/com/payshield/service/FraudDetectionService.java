@@ -22,7 +22,7 @@ public class FraudDetectionService {
         for (FraudRule rule : fraudRules) {
             if (rule.isFraudulent(transaction)) {
                 Alert alert = new Alert();
-                alert.setTransactionId(transaction.getId());
+                alert.setTransactionId(transaction.getuserId());
                 alert.setReason(rule.getReason());
                 alert.setStatus(AlertStatus.PENDING);
                 alert.setCreatedAt(System.currentTimeMillis());

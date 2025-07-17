@@ -3,7 +3,7 @@ package com.payshield.model.entity;
 import com.payshield.model.enums.PaymentMethod;
 
 public class Transaction {
-    private Long id;
+    private Long userId;
     private String senderAccount;
     private String receiverAccount;
     private double amount;
@@ -15,12 +15,12 @@ public class Transaction {
 
     // Getters & Setters
 
-    public Long getId() {
-        return id;
+    public Long getuserId() {
+        return userId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long userId) {
+        this.userId = userId;
     }
 
     public String getSenderAccount() {
