@@ -18,7 +18,7 @@ public class FraudDetectionService {
     @Autowired
     private AlertService alertService;
 
-    public void evaluateTransaction(Transaction transaction) {
+    public boolean evaluateTransaction(Transaction transaction) {
         for (FraudRule rule : fraudRules) {
             if (rule.isFraudulent(transaction)) {
                 Alert alert = new Alert();
@@ -27,8 +27,9 @@ public class FraudDetectionService {
                 alert.setStatus(AlertStatus.PENDING);
                 alert.setCreatedAt(System.currentTimeMillis());
                 alertService.saveAlert(alert);
-                break;
+                return true;
             }
         }
+        return false;
     }
 }
